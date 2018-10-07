@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>
+<style>
+
+body {
+  background-color:#F1F1F1;
+}
+
+.header{
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    border:2px;
+    border-color: DodgerBlue;
+}
+
+.background {
+    background-color: tomato;
+    color: white;
+    padding: 15px;
+    background-size: 75px;
+
+}
+
+.topnav{
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.column {
+    font-size: 18px;
+    float: left;
+    padding-left: 7.5px;
+    column-width: 300px;
+}
+</style>
+
+<script type="text/javascript" src="scripts.js"></script>
+
+</head>
+
+<body>
+
+    <h1 id=putNameHere class="header"> Your Profile </h1>
+    <div class="topnav">
+      <a href="calendar.html" id="events" target="" >Events</a>
+      <a href="forum.html" id="forum" target="">Forum</a>
+      <a href="login.php" id="logout" target="">Logout</a>
+      </div>
+
+      <div class="column">
+        <img id="picture" src="https://media.licdn.com/dms/image/C5603AQE9OoChO0KcnQ/profile-displayphoto-shrink_200_200/0?e=1544054400&v=beta&t=y5CKm4zdoUDOIDfwVRJ4qfNeRIlG7QgcanEl2c4v1Lw"  alt="Your profile name" width="350" height="400">
+      </div>
+
+      <div class="column">
+        <h2>Who am I?</h2>
+        <h3 class="background"> Biography </h3>
+        <p id="name"> Username: </p>
+        <p id="year"> Year:  </p>
+        <p id="classes"> Classes: </p>
+        <p id="interests"> Interests: </p>
+        <p id="languages"> Languages: </p>
+      </div>
+
+
+      <script>nameChange();</script>
+</body>
