@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="author" content="Vuggo">
+      <meta name="description" content="UGACS Loading Page">
+      <link rel="stylesheet" type="text/css" href="mp.css">
+      <script src="script.js"></script>
+    </head>
+
+
+    <body>
+      <style>
+
+
+      body {
+        background-color:#F1F1F1;
+      }
+
+      .background {
+          background-color:black;
+          color: white;
+          padding: 15px;
+          background-size: 100spx;
+
+      }
+      .center {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 100%;
+      }
+      .button {
+          background-color:tomato; /* Green */
+          border: 2px solid black;
+          color: black;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+      }
+      .button3 {border-radius: 50px;}
+
+
+
+      </style>
+      <input class="button button3" type="button" id="logoutButton" value="Go Back" onclick="window.open('login.php')" style="float: right;">
+          <form id="classes" class="poll" onsubmit="langCheck()">
+	            <h1 class="background ulin center"> Choose your interests in Computer Science! </h1>
+              <input type="checkbox" value="Algorithms">Algorithms<br>
+              <input type="checkbox" value="Android Development">Android Development<br>
+              <input type="checkbox" value="Artificial Intelligence">Artificial Intelligence<br>
+              <input type="checkbox" value="Augmented Reality">Augmented Reality<br>
+              <input type="checkbox" value="Big Data">Big Data<br>
+              <input type="checkbox" value="Compilers">Compilers<br>
+              <input type="checkbox" value="Computational Sciences">Computational Sciences<br>
+              <input type="checkbox" value="Computing Theory">Computing Theory<br>
+              <input type="checkbox" value="Cybersecurity">Cybersecurity<br>
+              <input type="checkbox" value="Database Management">Database Management<br>
+              <input type="checkbox" value="Data Strutrues">Data Structures<br>
+              <input type="checkbox" value="Graphics/UI">Graphics/UI<br>
+              <input type="checkbox" value="Hardware">Hardware<br>
+              <input type="checkbox" value="IOS Development">IOS Development<br>
+              <input type="checkbox" value="IoT">IoT<br>
+              <input type="checkbox" value="Operating Systems">Operating Systems<br>
+              <input type="checkbox" value="Machine Learning">Machine Learning<br>
+              <input type="checkbox" value="Networks">Networks<br>
+              <input type="checkbox" value="Robotics">Robotics<br>
+              <input type="checkbox" value="Software Engineering">Software Engineering<br>
+              <input type="checkbox" value="Virtual Reality">Virtual Reality<br>
+              <input type="checkbox" value="Web Development">Web Development<br>
+              <br>
+          </form>
+
+
+          <form id="lang" class="poll" onsubmit="langCheck()">
+
+            <h1 class="background ulin center">What programming languages do you know?</h1>
+            <input id="myBox0" type="checkbox" value="Assembly" onclick="unhide()">Assembly<br>
+
+              <select id="sel0" style="display:none">
+                <optgroup label="Level of expertise?">
+                  <option value="Beginner">Beginner</option>
+                  <option value="Intermediate">Intermediate</option>
+                  <option value="Expert">Expert</option>
+                </optgroup>
+              </select>
+
+            <input id="myBox1" type="checkbox" value="Bash" onclick="unhide()">Bash<br>
+
+              <select id="sel1" style="display:none">
+                <optgroup label="Level of expertise?">
+                  <option value="Beginner">Beginner</option>
+                  <option value="Intermediate">Intermediate</option>
+                  <option value="Expert">Expert</option>
+                </optgroup>
+              </select>
+
+            <input id="myBox2" type="checkbox" value="C" onclick="unhide()">C<br>
+
+              <select id="sel2" style="display:none">
+                <optgroup label="Level of expertise?">
+                  <option value="Beginner">Beginner</option>
+                  <option value="Intermediate">Intermediate</option>
+                  <option value="Expert">Expert</option>
+                </optgroup>
+              </select>
+
+            <input id="myBox3" type="checkbox" value="C#" onclick="unhide()">C#<br>
+
+              <select id="sel3" style="display:none">
+                <optgroup label="Level of expertise?">
+                  <option value="Beginner">Beginner</option>
+                  <option value="Intermediate">Intermediate</option>
+                  <option value="Expert">Expert</option>
+                </optgroup>
+              </select>
+
+            <input id="myBox4" type="checkbox" value="C++" onclick="unhide()">C++<br>
+
+              <select id="sel4" style="display:none">
+                <optgroup label="Level of expertise?">
+                  <option value="Beginner">Beginner</option>
+                  <option value="Intermediate">Intermediate</option>
+                  <option value="Expert">Expert</option>
+                </optgroup>
+              </select>
+
+            <input id="myBox5" type="checkbox" value="CSS" onclick="unhide()">CSS<br>
+
+            <select id="sel5" style="display:none">
+              <optgroup label="Level of expertise?">
+                <option value="Beginner">Beginner</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Expert">Expert</option>
+              </optgroup>
+            </select>
+
+
+            <input id="myBox6" type="checkbox" value="HTML" onclick="unhide()">HTML<br>
+
+              <select id="sel6" style="display:none">
+                <optgroup label="Level of expertise?">
+                  <option value="Beginner">Beginner</option>
+                  <option value="Intermediate">Intermediate</option>
+                  <option value="Expert">Expert</option>
+                </optgroup>
+              </select>
+
+            <input id="myBox7" type="checkbox" value="Java" onclick="unhide()">Java<br>
+
+              <select id="sel7" style="display:none">
+                <optgroup label="Level of expertise?">
+                  <option value="Beginner">Beginner</option>
+                  <option value="Intermediate">Intermediate</option>
+                  <option value="Expert">Expert</option>
+                </optgroup>
+              </select>
+
+            <input id="myBox8" type="checkbox" value="Javascript" onclick="unhide()">Javascript<br>
+
+              <select id="sel8" style="display:none">
+                <optgroup label="Level of expertise?">
+                  <option value="Beginner">Beginner</option>
+                  <option value="Intermediate">Intermediate</option>
+                  <option value="Expert">Expert</option>
+                </optgroup>
+              </select>
+
+            <input id="myBox9" type="checkbox" value="Lua" onclick="unhide()">Lua<br>
+
+              <select id="sel9" style="display:none">
+                <optgroup label="Level of expertise?">
+                  <option value="Beginner">Beginner</option>
+                  <option value="Intermediate">Intermediate</option>
+                  <option value="Expert">Expert</option>
+                </optgroup>
+              </select>
+
+            <input id="myBox10" type="checkbox" value="MATLAB" onclick="unhide()">MATLAB<br>
+
+              <select id="sel10" style="display:none">
+                <optgroup label="Level of expertise?">
+                  <option value="Beginner">Beginner</option>
+                  <option value="Intermediate">Intermediate</option>
+                  <option value="Expert">Expert</option>
+                </optgroup>
+              </select>
+
+            <input id="myBox11" type="checkbox" value="Perl" onclick="unhide()">Perl<br>
+
+              <select id="sel11" style="display:none">
+                <optgroup label="Level of expertise?">
+                  <option value="Beginner">Beginner</option>
+                  <option value="Intermediate">Intermediate</option>
+                  <option value="Expert">Expert</option>
+                </optgroup>
+              </select>
+
+            <input id="myBox12" type="checkbox" value="PHP" onclick="unhide()">PHP<br>
+
+              <select id="sel12" style="display:none">
+                <optgroup label="Level of expertise?">
+                  <option value="Beginner">Beginner</option>
+                  <option value="Intermediate">Intermediate</option>
+                  <option value="Expert">Expert</option>
+                </optgroup>
+              </select>
+
+            <input id="myBox13" type="checkbox" value="Python" onclick="unhide()">Python<br>
+
+              <select id="sel13" style="display:none">
+                <optgroup label="Level of expertise?">
+                  <option value="Beginner">Beginner</option>
+                  <option value="Intermediate">Intermediate</option>
+                  <option value="Expert">Expert</option>
+                </optgroup>
+              </select>
+
+            <input id="myBox14" type="checkbox" value="Ruby" onclick="unhide()">Ruby<br>
+
+              <select id="sel14" style="display:none">
+                <optgroup label="Level of expertise?">
+                  <option value="Beginner">Beginner</option>
+                  <option value="Intermediate">Intermediate</option>
+                  <option value="Expert">Expert</option>
+                </optgroup>
+              </select>
+
+            <input id="myBox15" type="checkbox" value="SQL" onclick="unhide()">SQL<br>
+
+              <select id="sel15" style="display:none">
+                <optgroup label="Level of expertise?">
+                  <option value="Beginner">Beginner</option>
+                  <option value="Intermediate">Intermediate</option>
+                  <option value="Expert">Expert</option>
+                </optgroup>
+              </select>
+
+            <input id="myBox16" type="checkbox" value="Swift" onclick="unhide()">Swift<br>
+
+              <select id="sel16" style="display:none">
+                <optgroup label="Level of expertise?">
+                  <option value="Beginner">Beginner</option>
+                  <option value="Intermediate">Intermediate</option>
+                  <option value="Expert">Expert</option>
+                </optgroup>
+              </select>
+
+            <input id="myBox17" type="checkbox" value="XML" onclick="unhide()">XML<br>
+
+              <select id="sel17" style="display:none">
+                <optgroup label="Level of expertise?">
+                  <option value="Beginner">Beginner</option>
+                  <option value="Intermediate">Intermediate</option>
+                  <option value="Expert">Expert</option>
+                </optgroup>
+              </select>
+
+            <input id="myBox18" type="checkbox" value="Visual Basic" onclick="unhide()">Visual Basic<br>
+
+              <select id="sel18" style="display:none">
+                <optgroup label="Level of expertise?">
+                  <option value="Beginner">Beginner</option>
+                  <option value="Intermediate">Intermediate</option>
+                  <option value="Expert">Expert</option>
+                </optgroup>
+              </select>
+              <br>
+            <input class="button button3" type="submit" value="Submit" onclick="profile_fill()"><br>
+          </form>
+
+    </body>
+</html>
+
+<script src="script.js">
+
+</script>
